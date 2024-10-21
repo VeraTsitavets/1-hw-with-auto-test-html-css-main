@@ -73,7 +73,7 @@ select {
     margin-bottom: 25px;
     font-weight: 700;
     font-size: 24px;
-    
+
 }
 
 .frameworks-list {
@@ -82,7 +82,7 @@ select {
     font-size: 16px;
     list-style-image: url(./assets/images/Vector-2.svg);
     margin-left: 20px;
-    
+    padding: 0px 20px;
 }
 
 .books-list {
@@ -90,6 +90,7 @@ select {
     font-weight: 400;
     font-size: 16px;
     margin-left: 20px;
+    padding: 0px 20px;
 }
 
 .label {
@@ -134,20 +135,20 @@ table {
     border: none;
     border-collapse: collapse;
     table-layout: fixed;
+    font-size: 14px;
 }
 
 th, td {
     /* Стили для ячеек таблицы */
-    font-size: 14px;
-    padding: 10px 13px 12px 15px;
+    padding: 12px 15px;
     border: 1px solid #95a1bb;
 }
 
 footer {
     /* Стили для футера */
-    background: rgba(163, 167, 255, 0.3);
+    background-color: rgba(163, 167, 255, 0.3);
     height: 70px;
-    padding: 26px 0 27px 1px;
+    padding: 26px 0;
 }
 
 .footer-link {
