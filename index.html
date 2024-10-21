@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>It-incubator precourse</title>
 </head>
 <body>
@@ -14,18 +18,18 @@
         <span>IT-INCUBATOR</span>
     </header>
 
-    <section data-cy="hw1-section-main-pre">
+    <section class="main-section" data-cy="hw1-section-main-pre">
         <!-- 1) В этом разделе создай 3 дочерних элемента: -->
-        <h1>Титовец Вера Андреевна</h1>
-        <p>В этом году получила диплом дизайнера! Люблю видео-игры, коллекционирую фигурки, рисую, а еще люблю настолки :3</p>
-        <img src="https://i.pinimg.com/564x/92/3e/c2/923ec29eb3d2c0c99b4eaad317c35342.jpg" alt="Ichiban Kasuga from the popular Yakuza Like A Dragon game series meme 'seaching for a job.. no skills, no expirience' he's so me fr..">
+        <h1 class="main-title">Титовец Вера Андреевна</h1>
+        <p class="main-text">В этом году получила диплом дизайнера! Люблю видео-игры, коллекционирую фигурки, рисую, а еще люблю настолки :3</p>
+        <img class="main-image" src="https://i.pinimg.com/564x/92/3e/c2/923ec29eb3d2c0c99b4eaad317c35342.jpg" alt="Ichiban Kasuga from the popular Yakuza Like A Dragon game series meme 'seaching for a job.. no skills, no expirience' he's so me fr..">
 
         <!-- a) Заголовок первого уровня со своим ФИО -->
         <!-- b) Несколько строк о себе: где учишься или работаешь, хобби, увлечения. Используй тег для абзаца. Длина строки должна быть больше 50-ти симвов (пробелы и др знаки припинания тоже считаются символом) -->
         <!-- c) Фото (или любую картинку из интернета). Не забудь добавить описание на случай, если изображение не загрузится -->
     </section>
 
-    <section data-cy="hw1-section-about-pre">
+    <section class="about-section" data-cy="hw1-section-about-pre">
         <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
         <select class="city">
             <option class="city-list" value="hrodna">Hrodna</option>
@@ -34,8 +38,8 @@
         </select>
         <div data-cy="hw1-unordered-list-box-pre">
             <!-- 3) В этом разделе создай 2 дочерних элемента: -->
-            <h2>Любимые фильмы</h2>
-            <ul>
+            <h2 class="section-title">Любимые фильмы</h2>
+            <ul class="frameworks-list">
                 <li>Убийца Ичи</li>
                 <li>Олд Бой (Корея)</li>
                 <li>Я Видел Дьявола</li>
@@ -45,8 +49,8 @@
         </div>
         <div data-cy="hw1-ordered-list-box-pre">
             <!-- 3) В этом разделе создай 2 дочерних элемента: -->
-            <h2>Любимые книги</h2>
-            <ol>
+            <h2 class="section-title">Любимые книги</h2>
+            <ol class="books-list">
                 <li>Исповедь неполноценного человека - Осаму Дадзай</li>
                 <li>Кровавый меридиан, или Закатный багрянец на западе - Кормак Мак Карти</li>
                 <li>VERMIS - plasibo</li>
@@ -56,21 +60,21 @@
             <!-- b) Нумерованный (упорядоченный) список. В списке должно быть не менее 3-х элементов -->
         </div>
         <div data-cy="hw1-skills-box-pre">
-            <h2>Мои скиллы</h2>
+            <h2 class="section-title">Мои скиллы</h2>
             <label for="theme-1">
-                <input id="theme-1" type="checkbox" checked>
+                <input class="label" id="theme-1" type="checkbox" checked>
                 HTML
             </label>
             <label for="theme-2">
-                <input id="theme-2" type="checkbox" checked>
+                <input class="label" id="theme-2" type="checkbox" checked>
                 CSS
             </label>
             <label for="theme-3">
-                <input id="theme-3" type="checkbox">
+                <input class="label" id="theme-3" type="checkbox">
                 JS
             </label>
             <label for="theme-4">
-                <input id="theme-4" type="checkbox">
+                <input class="label" id="theme-4" type="checkbox">
                 React
             </label>
             <!-- 4) Здесь создай несколько чекбоксов с подписью (не меньше 3-х). 
@@ -79,14 +83,14 @@
                 - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
         </div>
         <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
-        <input type="text" placeholder="Новый скилл">
-        <button type="submit">Добавить</button>
-        <hr>
+        <input class="text-field" type="text" placeholder="Новый скилл">
+        <button class="btn" type="submit">Добавить</button>
+        <hr class="line">
         <!-- 6) Создай здесь кнопку “Добавить” -->
         <!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
         
         <table border="" data-cy="hw-about-table-pre">
-            <!-- <!-- 8) В таблице сделай 5 строк и 3 столбца.  -->
+            <!--  8) В таблице сделай 5 строк и 3 столбца.  -->
                 <tr>
                     <th>№</th>
                     <th>Список ВАЖНЫХ покупок</th>
@@ -122,7 +126,7 @@
         </table>
     </section>
     <footer data-cy="hw-footer-pre">
-        <a href="https://it-incubator.io/" target="_blank">it-incubator</a>
+        <a class="footer-link" href="https://it-incubator.io/" target="_blank">it-incubator</a>
         <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
     </footer>
 </body>
